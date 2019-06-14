@@ -1,0 +1,2288 @@
+{
+    "Vpcs": [
+        {
+            "VpcId": "vpc-0a2968302d438fdd2", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "jay-ptfe-vpc", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-02e5a03936827474c", 
+                    "CidrBlock": "10.0.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-de6afeb9", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.0.0/16", 
+            "IsDefault": false
+        }, 
+        {
+            "VpcId": "vpc-0f444996bb78df67b", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "dev.k8s.cloudbeesjenkins.in", 
+                    "Key": "KubernetesCluster"
+                }, 
+                {
+                    "Value": "dev.k8s.cloudbeesjenkins.in", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "owned", 
+                    "Key": "kubernetes.io/cluster/dev.k8s.cloudbeesjenkins.in"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-03db1ddb13a514c67", 
+                    "CidrBlock": "172.20.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-0b87d09d27c4d6c30", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.20.0.0/16", 
+            "IsDefault": false
+        }, 
+        {
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }, 
+                {
+                    "Value": "RMS_Devvcp_terr", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-03d96e4872d99e199", 
+                    "CidrBlock": "10.0.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-de6afeb9", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.0.0/16", 
+            "IsDefault": false
+        }, 
+        {
+            "VpcId": "vpc-033569cb4852fa687", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "cbjenkins1.co.uk", 
+                    "Key": "KubernetesCluster"
+                }, 
+                {
+                    "Value": "cbjenkins1.co.uk", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "owned", 
+                    "Key": "kubernetes.io/cluster/cbjenkins1.co.uk"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-048c02e3ab3f9e15b", 
+                    "CidrBlock": "172.20.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-04cc9fbe48efcab79", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.20.0.0/16", 
+            "IsDefault": false
+        }, 
+        {
+            "VpcId": "vpc-4193e726", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "DefaultVPC", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-3c3a6f54", 
+                    "CidrBlock": "172.31.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-de6afeb9", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.31.0.0/16", 
+            "IsDefault": true
+        }
+    ]
+}
+{
+    "Subnets": [
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "jay-ptfe-subnet-ap-southeast-2a", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 251, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-03b7aaf13ff643d5b", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-0a2968302d438fdd2", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-03b7aaf13ff643d5b", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.1.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az3", 
+            "Tags": [
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }, 
+                {
+                    "Value": "ap-southeast-2b.cbjenkins1.co.uk", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "Public", 
+                    "Key": "SubnetType"
+                }, 
+                {
+                    "Value": "cbjenkins1.co.uk", 
+                    "Key": "KubernetesCluster"
+                }, 
+                {
+                    "Value": "owned", 
+                    "Key": "kubernetes.io/cluster/cbjenkins1.co.uk"
+                }
+            ], 
+            "AvailableIpAddressCount": 8185, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-0f0a8b4ceb5eec1be", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-033569cb4852fa687", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2b", 
+            "SubnetId": "subnet-0f0a8b4ceb5eec1be", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.20.64.0/19", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az3", 
+            "Tags": [
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/wipro-domain4rms.de"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/mywipro.rmsdomain.de"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }, 
+                {
+                    "Value": "Dev_RMS_private_subnet02_terr", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/internal-elb"
+                }, 
+                {
+                    "Value": "Private", 
+                    "Key": "SubnetType"
+                }
+            ], 
+            "AvailableIpAddressCount": 219, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-0d4a1a7da7bbfec64", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2b", 
+            "SubnetId": "subnet-0d4a1a7da7bbfec64", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.2.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "Public_Subnet02", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 4088, 
+            "DefaultForAz": true, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-ba7e59dd", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-4193e726", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-ba7e59dd", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.31.0.0/20", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "Dev_RMS_private_subnet01_terr", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "Private", 
+                    "Key": "SubnetType"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/wipro-domain4rms.de"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/mywipro.rmsdomain.de"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/internal-elb"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }
+            ], 
+            "AvailableIpAddressCount": 213, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-088e91c22c54bdebc", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-088e91c22c54bdebc", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.1.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az2", 
+            "Tags": [
+                {
+                    "Value": "cbjenkins1.co.uk", 
+                    "Key": "KubernetesCluster"
+                }, 
+                {
+                    "Value": "Public", 
+                    "Key": "SubnetType"
+                }, 
+                {
+                    "Value": "ap-southeast-2c.cbjenkins1.co.uk", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }, 
+                {
+                    "Value": "owned", 
+                    "Key": "kubernetes.io/cluster/cbjenkins1.co.uk"
+                }
+            ], 
+            "AvailableIpAddressCount": 8185, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-019164c78c034561b", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-033569cb4852fa687", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2c", 
+            "SubnetId": "subnet-019164c78c034561b", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.20.96.0/19", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az2", 
+            "Tags": [
+                {
+                    "Value": "Dev_RMS_public_subnet03_terr", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }
+            ], 
+            "AvailableIpAddressCount": 217, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-0e4f4d0a097e02522", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2c", 
+            "SubnetId": "subnet-0e4f4d0a097e02522", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.13.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az3", 
+            "Tags": [
+                {
+                    "Value": "PrivateSub2-Xlr", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 248, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-08d16581911914048", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2b", 
+            "SubnetId": "subnet-08d16581911914048", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.5.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az2", 
+            "Tags": [
+                {
+                    "Value": "Public_subnet01", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 4089, 
+            "DefaultForAz": true, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-337aab6b", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-4193e726", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2c", 
+            "SubnetId": "subnet-337aab6b", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.31.16.0/20", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az3", 
+            "Tags": [
+                {
+                    "Value": "jay-ptfe-subnet-ap-southeast-2b", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 251, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-04a06d52def3a5e8f", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-0a2968302d438fdd2", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2b", 
+            "SubnetId": "subnet-04a06d52def3a5e8f", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.2.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "private_subnet01", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 4091, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-033a0bd9baeb49e12", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-4193e726", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-033a0bd9baeb49e12", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.31.48.0/20", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "PrivateSub1-Xlr", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 245, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-0e59a8c6c948a3870", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-0e59a8c6c948a3870", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.4.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "ap-southeast-2a.cbjenkins1.co.uk", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "Public", 
+                    "Key": "SubnetType"
+                }, 
+                {
+                    "Value": "cbjenkins1.co.uk", 
+                    "Key": "KubernetesCluster"
+                }, 
+                {
+                    "Value": "owned", 
+                    "Key": "kubernetes.io/cluster/cbjenkins1.co.uk"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }
+            ], 
+            "AvailableIpAddressCount": 8185, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-0c11599d6c58c31e8", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-033569cb4852fa687", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-0c11599d6c58c31e8", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.20.32.0/19", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az3", 
+            "Tags": [
+                {
+                    "Value": "Public_Subnet03", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 4091, 
+            "DefaultForAz": true, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-f9aafbb0", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-4193e726", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2b", 
+            "SubnetId": "subnet-f9aafbb0", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.31.32.0/20", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "ap-southeast-2a.dev.k8s.cloudbeesjenkins.in", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }, 
+                {
+                    "Value": "Public", 
+                    "Key": "SubnetType"
+                }, 
+                {
+                    "Value": "owned", 
+                    "Key": "kubernetes.io/cluster/dev.k8s.cloudbeesjenkins.in"
+                }, 
+                {
+                    "Value": "dev.k8s.cloudbeesjenkins.in", 
+                    "Key": "KubernetesCluster"
+                }
+            ], 
+            "AvailableIpAddressCount": 8184, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-064201dc10d17ed31", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-0f444996bb78df67b", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-064201dc10d17ed31", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.20.32.0/19", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az3", 
+            "Tags": [
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }, 
+                {
+                    "Value": "Dev_RMS_public_subnet02_terr", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 213, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-055bdbf2fe8a88824", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2b", 
+            "SubnetId": "subnet-055bdbf2fe8a88824", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.12.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az2", 
+            "Tags": [
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/mywipro.rmsdomain.de"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/wipro-domain4rms.de"
+                }, 
+                {
+                    "Value": "Private", 
+                    "Key": "SubnetType"
+                }, 
+                {
+                    "Value": "Dev_RMS_private_subnet03_terr", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/internal-elb"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }
+            ], 
+            "AvailableIpAddressCount": 234, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-086cafe978b15075c", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2c", 
+            "SubnetId": "subnet-086cafe978b15075c", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.3.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }, 
+                {
+                    "Value": "Dev_RMS_public_subnet01_terr", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 209, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-02e78726bf1632efd", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-02e78726bf1632efd", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.11.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }
+    ]
+}
+{
+    "VpcPeeringConnections": [
+        {
+            "Status": {
+                "Message": "Active", 
+                "Code": "active"
+            }, 
+            "Tags": [
+                {
+                    "Value": "VPC_Peering_MGMT-GW", 
+                    "Key": "Name"
+                }
+            ], 
+            "AccepterVpcInfo": {
+                "PeeringOptions": {
+                    "AllowEgressFromLocalVpcToRemoteClassicLink": false, 
+                    "AllowDnsResolutionFromRemoteVpc": true, 
+                    "AllowEgressFromLocalClassicLinkToRemoteVpc": false
+                }, 
+                "VpcId": "vpc-4193e726", 
+                "Region": "ap-southeast-2", 
+                "OwnerId": "703724776639", 
+                "CidrBlockSet": [
+                    {
+                        "CidrBlock": "172.31.0.0/16"
+                    }
+                ], 
+                "CidrBlock": "172.31.0.0/16"
+            }, 
+            "VpcPeeringConnectionId": "pcx-04c2801d183fffabf", 
+            "RequesterVpcInfo": {
+                "PeeringOptions": {
+                    "AllowEgressFromLocalVpcToRemoteClassicLink": false, 
+                    "AllowDnsResolutionFromRemoteVpc": true, 
+                    "AllowEgressFromLocalClassicLinkToRemoteVpc": false
+                }, 
+                "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+                "Region": "ap-southeast-2", 
+                "OwnerId": "703724776639", 
+                "CidrBlockSet": [
+                    {
+                        "CidrBlock": "10.0.0.0/16"
+                    }
+                ], 
+                "CidrBlock": "10.0.0.0/16"
+            }
+        }
+    ]
+}
+{
+    "CustomerGateways": []
+}
+{
+    "VpnGateways": []
+}
+{
+    "NatGateways": [
+        {
+            "NatGatewayAddresses": [
+                {
+                    "PublicIp": "13.239.143.223", 
+                    "NetworkInterfaceId": "eni-095311f39abe19bb0", 
+                    "AllocationId": "eipalloc-0c20b00f5befd3d59", 
+                    "PrivateIp": "10.0.11.84"
+                }
+            ], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "Tags": [
+                {
+                    "Value": "ansible-tower01", 
+                    "Key": "Name"
+                }
+            ], 
+            "State": "available", 
+            "NatGatewayId": "nat-05ed87a9e22a6c461", 
+            "SubnetId": "subnet-02e78726bf1632efd", 
+            "CreateTime": "2019-04-29T22:19:15.000Z"
+        }
+    ]
+}
+{
+    "LoadBalancers": [
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/net/ocpwildcarddns-test/1900904c10a53665", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "ocpwildcarddns-test-1900904c10a53665.elb.ap-southeast-2.amazonaws.com", 
+            "LoadBalancerName": "ocpwildcarddns-test", 
+            "CreatedTime": "2019-05-29T05:35:28.232Z", 
+            "Scheme": "internet-facing", 
+            "Type": "network", 
+            "CanonicalHostedZoneId": "ZCT6FZBF4DROD", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/net/ocpwildcarddns-nlb-new/5b39432e8dad21ac", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "ocpwildcarddns-nlb-new-5b39432e8dad21ac.elb.ap-southeast-2.amazonaws.com", 
+            "LoadBalancerName": "ocpwildcarddns-nlb-new", 
+            "CreatedTime": "2019-05-28T16:56:24.319Z", 
+            "Scheme": "internet-facing", 
+            "Type": "network", 
+            "CanonicalHostedZoneId": "ZCT6FZBF4DROD", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/net/openshift-nlb/c14614b23f5a02d8", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "openshift-nlb-c14614b23f5a02d8.elb.ap-southeast-2.amazonaws.com", 
+            "LoadBalancerName": "openshift-nlb", 
+            "CreatedTime": "2019-05-04T04:29:01.387Z", 
+            "Scheme": "internet-facing", 
+            "Type": "network", 
+            "CanonicalHostedZoneId": "ZCT6FZBF4DROD", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }, 
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/infra/9f38da6816c2a3f0", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "internal-infra-1021466351.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-0c095627da41d46a5"
+            ], 
+            "LoadBalancerName": "infra", 
+            "CreatedTime": "2019-04-29T15:59:25.200Z", 
+            "Scheme": "internal", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-086cafe978b15075c", 
+                    "ZoneName": "ap-southeast-2c"
+                }, 
+                {
+                    "SubnetId": "subnet-088e91c22c54bdebc", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-0d4a1a7da7bbfec64", 
+                    "ZoneName": "ap-southeast-2b"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/master/a724d8749184f1a4", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "master-2019775061.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-08dba818c4d1689f4"
+            ], 
+            "LoadBalancerName": "master", 
+            "CreatedTime": "2019-04-29T15:59:26.300Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/ocpmasteralb/e440b9e146d71cd1", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "ocpmasteralb-1611642672.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-08dba818c4d1689f4"
+            ], 
+            "LoadBalancerName": "ocpmasteralb", 
+            "CreatedTime": "2019-05-03T04:31:22.240Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/ocpdnswildcard/64fcabce5d72bbab", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "ocpdnswildcard-2137242495.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-08dba818c4d1689f4"
+            ], 
+            "LoadBalancerName": "ocpdnswildcard", 
+            "CreatedTime": "2019-05-03T04:40:29.730Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/ocpintalb/34bcc1dd4a1d67f0", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "ocpintalb-943492866.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-08dba818c4d1689f4"
+            ], 
+            "LoadBalancerName": "ocpintalb", 
+            "CreatedTime": "2019-05-05T19:39:40.640Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/masteralbansible/6fe3becc94577228", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "masteralbansible-586861481.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-09e7e3467c4197703"
+            ], 
+            "LoadBalancerName": "masteralbansible", 
+            "CreatedTime": "2019-05-06T13:48:43.130Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/Bitbucket-ELB/9416d57570d755c9", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "Bitbucket-ELB-1523775937.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-0ba6887c543555b70"
+            ], 
+            "LoadBalancerName": "Bitbucket-ELB", 
+            "CreatedTime": "2019-05-16T12:04:23.990Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-086cafe978b15075c", 
+                    "ZoneName": "ap-southeast-2c"
+                }, 
+                {
+                    "SubnetId": "subnet-088e91c22c54bdebc", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-0d4a1a7da7bbfec64", 
+                    "ZoneName": "ap-southeast-2b"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/msalbansielbinternal/2bea6846b43c8321", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "internal-msalbansielbinternal-1247494719.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-04b298fc5c168fa6b"
+            ], 
+            "LoadBalancerName": "msalbansielbinternal", 
+            "CreatedTime": "2019-05-30T18:33:28.200Z", 
+            "Scheme": "internal", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/sandbox-xlrxld-demo-elb/3934aac433c91ded", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "internal-sandbox-xlrxld-demo-elb-826472123.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-01d1445930419c8e5"
+            ], 
+            "LoadBalancerName": "sandbox-xlrxld-demo-elb", 
+            "CreatedTime": "2019-06-12T03:37:14.060Z", 
+            "Scheme": "internal", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-088e91c22c54bdebc", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-0d4a1a7da7bbfec64", 
+                    "ZoneName": "ap-southeast-2b"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/ptfe-lb-tf/593a29f60ae33778", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "ptfe-lb-tf-1084817125.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-01f93b182e7219a54"
+            ], 
+            "LoadBalancerName": "ptfe-lb-tf", 
+            "CreatedTime": "2019-06-13T05:18:44.090Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }
+    ]
+}
+{
+    "Vpcs": [
+        {
+            "VpcId": "vpc-0a2968302d438fdd2", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "jay-ptfe-vpc", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-02e5a03936827474c", 
+                    "CidrBlock": "10.0.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-de6afeb9", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.0.0/16", 
+            "IsDefault": false
+        }, 
+        {
+            "VpcId": "vpc-0f444996bb78df67b", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "dev.k8s.cloudbeesjenkins.in", 
+                    "Key": "KubernetesCluster"
+                }, 
+                {
+                    "Value": "dev.k8s.cloudbeesjenkins.in", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "owned", 
+                    "Key": "kubernetes.io/cluster/dev.k8s.cloudbeesjenkins.in"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-03db1ddb13a514c67", 
+                    "CidrBlock": "172.20.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-0b87d09d27c4d6c30", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.20.0.0/16", 
+            "IsDefault": false
+        }, 
+        {
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }, 
+                {
+                    "Value": "RMS_Devvcp_terr", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-03d96e4872d99e199", 
+                    "CidrBlock": "10.0.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-de6afeb9", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.0.0/16", 
+            "IsDefault": false
+        }, 
+        {
+            "VpcId": "vpc-033569cb4852fa687", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "cbjenkins1.co.uk", 
+                    "Key": "KubernetesCluster"
+                }, 
+                {
+                    "Value": "cbjenkins1.co.uk", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "owned", 
+                    "Key": "kubernetes.io/cluster/cbjenkins1.co.uk"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-048c02e3ab3f9e15b", 
+                    "CidrBlock": "172.20.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-04cc9fbe48efcab79", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.20.0.0/16", 
+            "IsDefault": false
+        }, 
+        {
+            "VpcId": "vpc-4193e726", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "DefaultVPC", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-3c3a6f54", 
+                    "CidrBlock": "172.31.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-de6afeb9", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.31.0.0/16", 
+            "IsDefault": true
+        }
+    ]
+}
+{
+    "Subnets": [
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "jay-ptfe-subnet-ap-southeast-2a", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 251, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-03b7aaf13ff643d5b", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-0a2968302d438fdd2", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-03b7aaf13ff643d5b", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.1.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az3", 
+            "Tags": [
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }, 
+                {
+                    "Value": "ap-southeast-2b.cbjenkins1.co.uk", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "Public", 
+                    "Key": "SubnetType"
+                }, 
+                {
+                    "Value": "cbjenkins1.co.uk", 
+                    "Key": "KubernetesCluster"
+                }, 
+                {
+                    "Value": "owned", 
+                    "Key": "kubernetes.io/cluster/cbjenkins1.co.uk"
+                }
+            ], 
+            "AvailableIpAddressCount": 8185, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-0f0a8b4ceb5eec1be", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-033569cb4852fa687", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2b", 
+            "SubnetId": "subnet-0f0a8b4ceb5eec1be", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.20.64.0/19", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az3", 
+            "Tags": [
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/wipro-domain4rms.de"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/mywipro.rmsdomain.de"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }, 
+                {
+                    "Value": "Dev_RMS_private_subnet02_terr", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/internal-elb"
+                }, 
+                {
+                    "Value": "Private", 
+                    "Key": "SubnetType"
+                }
+            ], 
+            "AvailableIpAddressCount": 219, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-0d4a1a7da7bbfec64", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2b", 
+            "SubnetId": "subnet-0d4a1a7da7bbfec64", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.2.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "Public_Subnet02", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 4088, 
+            "DefaultForAz": true, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-ba7e59dd", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-4193e726", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-ba7e59dd", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.31.0.0/20", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "Dev_RMS_private_subnet01_terr", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "Private", 
+                    "Key": "SubnetType"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/wipro-domain4rms.de"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/mywipro.rmsdomain.de"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/internal-elb"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }
+            ], 
+            "AvailableIpAddressCount": 213, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-088e91c22c54bdebc", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-088e91c22c54bdebc", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.1.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az2", 
+            "Tags": [
+                {
+                    "Value": "cbjenkins1.co.uk", 
+                    "Key": "KubernetesCluster"
+                }, 
+                {
+                    "Value": "Public", 
+                    "Key": "SubnetType"
+                }, 
+                {
+                    "Value": "ap-southeast-2c.cbjenkins1.co.uk", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }, 
+                {
+                    "Value": "owned", 
+                    "Key": "kubernetes.io/cluster/cbjenkins1.co.uk"
+                }
+            ], 
+            "AvailableIpAddressCount": 8185, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-019164c78c034561b", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-033569cb4852fa687", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2c", 
+            "SubnetId": "subnet-019164c78c034561b", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.20.96.0/19", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az2", 
+            "Tags": [
+                {
+                    "Value": "Dev_RMS_public_subnet03_terr", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }
+            ], 
+            "AvailableIpAddressCount": 217, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-0e4f4d0a097e02522", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2c", 
+            "SubnetId": "subnet-0e4f4d0a097e02522", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.13.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az3", 
+            "Tags": [
+                {
+                    "Value": "PrivateSub2-Xlr", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 248, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-08d16581911914048", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2b", 
+            "SubnetId": "subnet-08d16581911914048", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.5.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az2", 
+            "Tags": [
+                {
+                    "Value": "Public_subnet01", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 4089, 
+            "DefaultForAz": true, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-337aab6b", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-4193e726", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2c", 
+            "SubnetId": "subnet-337aab6b", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.31.16.0/20", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az3", 
+            "Tags": [
+                {
+                    "Value": "jay-ptfe-subnet-ap-southeast-2b", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 251, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-04a06d52def3a5e8f", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-0a2968302d438fdd2", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2b", 
+            "SubnetId": "subnet-04a06d52def3a5e8f", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.2.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "private_subnet01", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 4091, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-033a0bd9baeb49e12", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-4193e726", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-033a0bd9baeb49e12", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.31.48.0/20", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "PrivateSub1-Xlr", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 245, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-0e59a8c6c948a3870", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-0e59a8c6c948a3870", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.4.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "ap-southeast-2a.cbjenkins1.co.uk", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "Public", 
+                    "Key": "SubnetType"
+                }, 
+                {
+                    "Value": "cbjenkins1.co.uk", 
+                    "Key": "KubernetesCluster"
+                }, 
+                {
+                    "Value": "owned", 
+                    "Key": "kubernetes.io/cluster/cbjenkins1.co.uk"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }
+            ], 
+            "AvailableIpAddressCount": 8185, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-0c11599d6c58c31e8", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-033569cb4852fa687", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-0c11599d6c58c31e8", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.20.32.0/19", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az3", 
+            "Tags": [
+                {
+                    "Value": "Public_Subnet03", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 4091, 
+            "DefaultForAz": true, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-f9aafbb0", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-4193e726", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2b", 
+            "SubnetId": "subnet-f9aafbb0", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.31.32.0/20", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "ap-southeast-2a.dev.k8s.cloudbeesjenkins.in", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }, 
+                {
+                    "Value": "Public", 
+                    "Key": "SubnetType"
+                }, 
+                {
+                    "Value": "owned", 
+                    "Key": "kubernetes.io/cluster/dev.k8s.cloudbeesjenkins.in"
+                }, 
+                {
+                    "Value": "dev.k8s.cloudbeesjenkins.in", 
+                    "Key": "KubernetesCluster"
+                }
+            ], 
+            "AvailableIpAddressCount": 8184, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-064201dc10d17ed31", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-0f444996bb78df67b", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-064201dc10d17ed31", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "172.20.32.0/19", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az3", 
+            "Tags": [
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }, 
+                {
+                    "Value": "Dev_RMS_public_subnet02_terr", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 213, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-055bdbf2fe8a88824", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2b", 
+            "SubnetId": "subnet-055bdbf2fe8a88824", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.12.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "apse2-az2", 
+            "Tags": [
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/mywipro.rmsdomain.de"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/wipro-domain4rms.de"
+                }, 
+                {
+                    "Value": "Private", 
+                    "Key": "SubnetType"
+                }, 
+                {
+                    "Value": "Dev_RMS_private_subnet03_terr", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/internal-elb"
+                }, 
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }, 
+                {
+                    "Value": "1", 
+                    "Key": "kubernetes.io/role/elb"
+                }
+            ], 
+            "AvailableIpAddressCount": 234, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-086cafe978b15075c", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2c", 
+            "SubnetId": "subnet-086cafe978b15075c", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.3.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "apse2-az1", 
+            "Tags": [
+                {
+                    "Value": "shared", 
+                    "Key": "kubernetes.io/cluster/Jenkins-test"
+                }, 
+                {
+                    "Value": "Dev_RMS_public_subnet01_terr", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 209, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:ap-southeast-2:703724776639:subnet/subnet-02e78726bf1632efd", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "State": "available", 
+            "AvailabilityZone": "ap-southeast-2a", 
+            "SubnetId": "subnet-02e78726bf1632efd", 
+            "OwnerId": "703724776639", 
+            "CidrBlock": "10.0.11.0/24", 
+            "AssignIpv6AddressOnCreation": false
+        }
+    ]
+}
+{
+    "VpcPeeringConnections": [
+        {
+            "Status": {
+                "Message": "Active", 
+                "Code": "active"
+            }, 
+            "Tags": [
+                {
+                    "Value": "VPC_Peering_MGMT-GW", 
+                    "Key": "Name"
+                }
+            ], 
+            "AccepterVpcInfo": {
+                "PeeringOptions": {
+                    "AllowEgressFromLocalVpcToRemoteClassicLink": false, 
+                    "AllowDnsResolutionFromRemoteVpc": true, 
+                    "AllowEgressFromLocalClassicLinkToRemoteVpc": false
+                }, 
+                "VpcId": "vpc-4193e726", 
+                "Region": "ap-southeast-2", 
+                "OwnerId": "703724776639", 
+                "CidrBlockSet": [
+                    {
+                        "CidrBlock": "172.31.0.0/16"
+                    }
+                ], 
+                "CidrBlock": "172.31.0.0/16"
+            }, 
+            "VpcPeeringConnectionId": "pcx-04c2801d183fffabf", 
+            "RequesterVpcInfo": {
+                "PeeringOptions": {
+                    "AllowEgressFromLocalVpcToRemoteClassicLink": false, 
+                    "AllowDnsResolutionFromRemoteVpc": true, 
+                    "AllowEgressFromLocalClassicLinkToRemoteVpc": false
+                }, 
+                "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+                "Region": "ap-southeast-2", 
+                "OwnerId": "703724776639", 
+                "CidrBlockSet": [
+                    {
+                        "CidrBlock": "10.0.0.0/16"
+                    }
+                ], 
+                "CidrBlock": "10.0.0.0/16"
+            }
+        }
+    ]
+}
+{
+    "CustomerGateways": []
+}
+{
+    "VpnGateways": []
+}
+{
+    "NatGateways": [
+        {
+            "NatGatewayAddresses": [
+                {
+                    "PublicIp": "13.239.143.223", 
+                    "NetworkInterfaceId": "eni-095311f39abe19bb0", 
+                    "AllocationId": "eipalloc-0c20b00f5befd3d59", 
+                    "PrivateIp": "10.0.11.84"
+                }
+            ], 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "Tags": [
+                {
+                    "Value": "ansible-tower01", 
+                    "Key": "Name"
+                }
+            ], 
+            "State": "available", 
+            "NatGatewayId": "nat-05ed87a9e22a6c461", 
+            "SubnetId": "subnet-02e78726bf1632efd", 
+            "CreateTime": "2019-04-29T22:19:15.000Z"
+        }
+    ]
+}
+{
+    "LoadBalancers": [
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/net/ocpwildcarddns-test/1900904c10a53665", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "ocpwildcarddns-test-1900904c10a53665.elb.ap-southeast-2.amazonaws.com", 
+            "LoadBalancerName": "ocpwildcarddns-test", 
+            "CreatedTime": "2019-05-29T05:35:28.232Z", 
+            "Scheme": "internet-facing", 
+            "Type": "network", 
+            "CanonicalHostedZoneId": "ZCT6FZBF4DROD", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/net/ocpwildcarddns-nlb-new/5b39432e8dad21ac", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "ocpwildcarddns-nlb-new-5b39432e8dad21ac.elb.ap-southeast-2.amazonaws.com", 
+            "LoadBalancerName": "ocpwildcarddns-nlb-new", 
+            "CreatedTime": "2019-05-28T16:56:24.319Z", 
+            "Scheme": "internet-facing", 
+            "Type": "network", 
+            "CanonicalHostedZoneId": "ZCT6FZBF4DROD", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/net/openshift-nlb/c14614b23f5a02d8", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "openshift-nlb-c14614b23f5a02d8.elb.ap-southeast-2.amazonaws.com", 
+            "LoadBalancerName": "openshift-nlb", 
+            "CreatedTime": "2019-05-04T04:29:01.387Z", 
+            "Scheme": "internet-facing", 
+            "Type": "network", 
+            "CanonicalHostedZoneId": "ZCT6FZBF4DROD", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }, 
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/infra/9f38da6816c2a3f0", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "internal-infra-1021466351.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-0c095627da41d46a5"
+            ], 
+            "LoadBalancerName": "infra", 
+            "CreatedTime": "2019-04-29T15:59:25.200Z", 
+            "Scheme": "internal", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-086cafe978b15075c", 
+                    "ZoneName": "ap-southeast-2c"
+                }, 
+                {
+                    "SubnetId": "subnet-088e91c22c54bdebc", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-0d4a1a7da7bbfec64", 
+                    "ZoneName": "ap-southeast-2b"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/master/a724d8749184f1a4", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "master-2019775061.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-08dba818c4d1689f4"
+            ], 
+            "LoadBalancerName": "master", 
+            "CreatedTime": "2019-04-29T15:59:26.300Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/ocpmasteralb/e440b9e146d71cd1", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "ocpmasteralb-1611642672.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-08dba818c4d1689f4"
+            ], 
+            "LoadBalancerName": "ocpmasteralb", 
+            "CreatedTime": "2019-05-03T04:31:22.240Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/ocpdnswildcard/64fcabce5d72bbab", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "ocpdnswildcard-2137242495.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-08dba818c4d1689f4"
+            ], 
+            "LoadBalancerName": "ocpdnswildcard", 
+            "CreatedTime": "2019-05-03T04:40:29.730Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/ocpintalb/34bcc1dd4a1d67f0", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "ocpintalb-943492866.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-08dba818c4d1689f4"
+            ], 
+            "LoadBalancerName": "ocpintalb", 
+            "CreatedTime": "2019-05-05T19:39:40.640Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/masteralbansible/6fe3becc94577228", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "masteralbansible-586861481.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-09e7e3467c4197703"
+            ], 
+            "LoadBalancerName": "masteralbansible", 
+            "CreatedTime": "2019-05-06T13:48:43.130Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/Bitbucket-ELB/9416d57570d755c9", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "Bitbucket-ELB-1523775937.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-0ba6887c543555b70"
+            ], 
+            "LoadBalancerName": "Bitbucket-ELB", 
+            "CreatedTime": "2019-05-16T12:04:23.990Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-086cafe978b15075c", 
+                    "ZoneName": "ap-southeast-2c"
+                }, 
+                {
+                    "SubnetId": "subnet-088e91c22c54bdebc", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-0d4a1a7da7bbfec64", 
+                    "ZoneName": "ap-southeast-2b"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/msalbansielbinternal/2bea6846b43c8321", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "internal-msalbansielbinternal-1247494719.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-04b298fc5c168fa6b"
+            ], 
+            "LoadBalancerName": "msalbansielbinternal", 
+            "CreatedTime": "2019-05-30T18:33:28.200Z", 
+            "Scheme": "internal", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/sandbox-xlrxld-demo-elb/3934aac433c91ded", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "internal-sandbox-xlrxld-demo-elb-826472123.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-01d1445930419c8e5"
+            ], 
+            "LoadBalancerName": "sandbox-xlrxld-demo-elb", 
+            "CreatedTime": "2019-06-12T03:37:14.060Z", 
+            "Scheme": "internal", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-088e91c22c54bdebc", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-0d4a1a7da7bbfec64", 
+                    "ZoneName": "ap-southeast-2b"
+                }
+            ]
+        }, 
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-02ab42a4ab4b3c9e9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-southeast-2:703724776639:loadbalancer/app/ptfe-lb-tf/593a29f60ae33778", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "ptfe-lb-tf-1084817125.ap-southeast-2.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-01f93b182e7219a54"
+            ], 
+            "LoadBalancerName": "ptfe-lb-tf", 
+            "CreatedTime": "2019-06-13T05:18:44.090Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z1GM3OXH4ZPM65", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-02e78726bf1632efd", 
+                    "ZoneName": "ap-southeast-2a"
+                }, 
+                {
+                    "SubnetId": "subnet-055bdbf2fe8a88824", 
+                    "ZoneName": "ap-southeast-2b"
+                }, 
+                {
+                    "SubnetId": "subnet-0e4f4d0a097e02522", 
+                    "ZoneName": "ap-southeast-2c"
+                }
+            ]
+        }
+    ]
+}
